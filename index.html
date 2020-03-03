@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Famous Currency Convert</title>
+</head>
+
+<body>
+    <div class="convert1">
+        <h1>Currency Convert</h1>
+        <form>
+
+            <input type="number" id="amount" />
+        </form>
+        <div>
+            <p>Select a input currency:</p>
+
+            <div>
+                <input type="radio" id="USD" name="inputcurrency" value="USD">
+                <label for="USD">USD</label>
+            </div>
+
+            <div>
+                <input type="radio" id="VND" name="inputcurrency" value="VND">
+                <label for="VND">VND</label>
+            </div>
+
+            <div>
+                <input type="radio" id="EURO" name="inputcurrency" value="EURO">
+                <label for="EURO">EURO</label>
+            </div>
+        </div>
+
+        <div>
+            <p>Select a output currency:</p>
+
+            <div>
+                <input type="radio" id="USD" name="outputcurrency" value="USD">
+                <label for="USD">USD</label>
+            </div>
+
+            <div>
+                <input type="radio" id="VND" name="outputcurrency" value="VND">
+                <label for="VND">VND</label>
+            </div>
+
+            <div>
+                <input type="radio" id="EURO" name="outputcurrency" value="EURO">
+                <label for="EURO">EURO</label>
+            </div>
+        </div>
+
+        <button id="convertButton">Convert</button>
+        <span id="resultArea">Result is</span>
+    </div>
+
+    <div class="conver2">
+        <form>
+            <input type="number" placeholder="input amount">
+        </form>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
