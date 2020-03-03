@@ -10,32 +10,32 @@ let outputcurrency
 let currencyConvert
 
 function usdToVnd(amount) {
-    let result = amount * currencyUsd
+    let result = (amount * currencyUsd).toFixed(2)
     return resultArea.innerHTML = `${amount} dollar is same as ${result} vnd`
 }
 
 function euroToVnd(amount) {
-    let result = amount * currencyEuro
+    let result = (amount * currencyEuro).toFixed(2)
     return resultArea.innerHTML = `${amount} euro is same as ${result} vnd`
 }
 
 function euroTousd(amount) {
-    let result = amount * (currencyEuro / currencyUsd)
+    let result = (amount * (currencyEuro / currencyUsd)).toFixed(2)
     return resultArea.innerHTML = `${amount} euro is same as ${result} usd`
 }
 
 function usdToEuro(amount) {
-    let result = amount * (currencyUsd / currencyEuro)
+    let result = (amount * (currencyUsd / currencyEuro)).toFixed(2)
     return resultArea.innerHTML = `${amount} usd is same as ${result} euro`
 }
 
 function vndToUsd(amount) {
-    let result = amount / currencyUsd
+    let result = (amount / currencyUsd).toFixed(2)
     return resultArea.innerHTML = `${amount} vnd is same as ${result} usd`
 }
 
 function vndToEuro(amount) {
-    let result = amount / currencyEuro
+    let result = (amount / currencyEuro).toFixed(2)
     return resultArea.innerHTML = `${amount} vnd is same as ${result} euro`
 }
 
